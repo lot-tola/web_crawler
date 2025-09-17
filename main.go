@@ -37,14 +37,7 @@ func (cfg *Config) crawlPage(rawCurrentUrl string) error {
 		if strings.HasPrefix(link, rawCurrentUrl) {
 			if _, visited := cfg.pages[link]; !visited {
 				fmt.Println("Start crawling at ", link)
-				for i := 0; i < 3; i++ {
-					go func() {
-						defer cfg.wg.Done()
-						cfg.crawlPage(link)
-					}()
-				}
-				cfg.wg.Wait()
-
+				cfg.crawlPage(link)
 			}
 		}
 	}
