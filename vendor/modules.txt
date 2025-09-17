@@ -1,0 +1,13 @@
+# github.com/PuerkitoBio/goquery v1.10.3
+## explicit; go 1.23.0
+github.com/PuerkitoBio/goquery
+# github.com/andybalholm/cascadia v1.3.3
+## explicit; go 1.16
+github.com/andybalholm/cascadia
+# github.com/golangci/golangci-lint v1.64.8
+## explicit; go 1.23.0
+github.com/golangci/golangci-lint/pkg/exitcodes
+# golang.org/x/net v0.39.0
+## explicit; go 1.23.0
+golang.org/x/net/html
+golang.org/x/net/html/atom
